@@ -6,7 +6,7 @@ function countStudents(path ) {
   try {
     content = fs.readFileSync(path);
   } catch (err) {
-    throw new Error('cannot load the database');
+    throw new Error('Cannot load the database');
   }
 
   content = content.toString().split('\n');
